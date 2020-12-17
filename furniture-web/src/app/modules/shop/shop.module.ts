@@ -12,6 +12,7 @@ import { UiModule } from 'src/app/shared/ui/ui.module';
 import { ProductListItemComponent } from './components/product-list-item/product-list-item.component';
 import { ProductStatusBadgeComponent } from './components/product-status-badge/product-status-badge.component';
 import { ShopProductDetailComponent } from './containers/shop-product-detail/shop-product-detail.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,6 @@ import { ShopProductDetailComponent } from './containers/shop-product-detail/sho
     ProductStatusBadgeComponent,
     ShopProductDetailComponent,
   ],
-  imports: [CommonModule, ShopRoutingModule, UiModule],
+  imports: [CommonModule, RouterModule, ShopRoutingModule, UiModule],
 })
 export class ShopModule {}

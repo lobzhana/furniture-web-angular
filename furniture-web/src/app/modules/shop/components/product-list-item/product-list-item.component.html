@@ -22,7 +22,14 @@
   ></app-product-status-badge>
 </div>
 <div class="heart">
-  <ui-heart [hearted]="product.hearted" (clicked)="onHeartClicked($event)"></ui-heart>
+  <ui-heart
+    [hearted]="product.hearted"
+    (clicked)="onHeartClicked($event)"
+  ></ui-heart>
 </div>
 
-<a href="shop" class="link"> </a>
+<a
+  [routerLink]="['products', product.id]"
+  class="link"
+>
+</a>
