@@ -1,0 +1,28 @@
+<div *ngIf="product">
+  <div class="img-container">
+    <img [src]="product.imageUri" />
+  </div>
+  <div class="container">
+    <span class="title">{{ product.title }}</span>
+    <span class="rating-star">
+      <ui-rating-star [stars]="product.stars"></ui-rating-star>
+    </span>
+  </div>
+  <div class="container">
+    <span class="price" [class.sale]="isSale(product)">
+      ${{ product.price }}</span
+    >
+    <span class="price-over">&nbsp;${{ product.oldPrice }} </span>
+  </div>
+</div>
+
+<div class="badge">
+  <app-product-status-badge
+    [statusCode]="product.status"
+  ></app-product-status-badge>
+</div>
+<div class="heart">
+  <ui-heart [hearted]="product.hearted" (clicked)="onHeartClicked($event)"></ui-heart>
+</div>
+
+<a href="shop" class="link"> </a>

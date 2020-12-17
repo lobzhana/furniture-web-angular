@@ -1,0 +1,36 @@
+<ng-container *ngIf="{ response: response$ | async } as context">
+  <div class="header">
+    <div class="title">Our Latest Products</div>
+    <div class="filter">
+      <ui-drop-down
+        [items]="[
+          { key: 'WEHHFJJ0-11', value: 'Featured' },
+          { key: 'WETJHJJ0-75', value: 'Newest' },
+          { key: 'DDJHJJ0-38', value: 'Price(Low To High)' },
+          { key: 'ZDFJHJJ0-54', value: 'Price(High To Low)' }
+        ]"
+        (changed)="sortingChanged($event)"
+        [selectedItem]="{ key: 'WEHHFJJ0-11', value: 'Featured' }"
+      ></ui-drop-down>
+    </div>
+  </div>
+  <ng-container *ngIf="context.response">
+    <div class="items-container">
+      <app-product-list-item
+        *ngFor="let product of context.response.products"
+        class="item"
+        [product]="product"
+        (hearted)="addToFavorites(product)"
+        (unhearted)="removeFromFavorites(product)"
+      ></app-product-list-item>
+    </div>
+    <div class="footer-container">
+      <ui-paging
+        [currentPage]="paging.page"
+        [pageSize]="paging.pageSize"
+        [total]="context.response.total"
+        (pageChanged)="pageChanged($event)"
+      ></ui-paging>
+    </div>
+  </ng-container>
+</ng-container>

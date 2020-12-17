@@ -1,0 +1,22 @@
+:host {
+  display: inline-block;
+  width: 61px;
+  height: 25px;
+
+  .badge {
+    display: inline-block;
+    width: 100%;
+    padding: 5px 16px 5px 17px;
+    font-size: 14px;
+    color: #ffffff;
+    font-family: "Josefin Sans", sans-serif;
+
+    &.new {
+      background-color: #ff5a7b;
+    }
+
+    &.sale {
+      background-color: #fbb001;
+    }
+  }
+}

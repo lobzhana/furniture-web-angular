@@ -1,0 +1,14 @@
+<span class="arrow" (click)="previous()">
+  <i class="material-icons">chevron_left</i>
+</span>
+<span
+  [class.current]="isCurrent(page)"
+  (click)="changePage(page)"
+  class="page"
+  *ngFor="let page of pages"
+>
+  {{ page }}
+</span>
+<span class="arrow" (click)="next()">
+  <i class="material-icons">chevron_right</i>
+</span>

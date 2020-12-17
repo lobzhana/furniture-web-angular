@@ -1,0 +1,20 @@
+:host {
+  display: flex;
+  width: 100%;
+  min-height: 426px;
+  padding: 39.9px 374px 56px 313px;
+  background: url("/assets/images/furniture-header-bg-2.jpg") bottom;
+  background-size: cover;
+
+  .navigation {
+    padding-top: 15px;
+    height: 55px;
+  }
+
+  .logo {
+    display: block;
+    width: 215px;
+    height: 55px;
+    margin-right: 130px;
+  }
+}

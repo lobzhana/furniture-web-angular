@@ -1,0 +1,16 @@
+:host {
+  display: inline-block;
+
+  i {
+    color: #b3bcc9;
+
+    &:hover {
+      color: #ff3939;
+      cursor: pointer;
+    }
+
+    &.hearted {
+      color: #ff3939;
+    }
+  }
+}

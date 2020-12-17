@@ -1,0 +1,56 @@
+:host {
+  display: block;
+  width: 100%;
+  min-height: 272px;
+  background: url("/assets/images/shop-offer-1.png");
+  background-size: cover;
+  margin-left: 30px;
+  padding: 0 0 10px 50px;
+
+  .header {
+    margin: 0 0 0 5px;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 22px;
+    line-height: 1.23;
+    color: #4e4d4d;
+    text-transform: capitalize;
+    padding-top: 38px;
+
+    .line {
+      display: inline-block;
+      width: 35px;
+      height: 2px;
+      background-color: #4e4d4d;
+      margin: 11px 5px 10px 0;
+      vertical-align: middle;
+    }
+  }
+
+  .title {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 1.23;
+    text-align: left;
+    color: #4e4d4d;
+    text-transform: capitalize;
+  }
+
+  .description {
+    margin: 22px 8px 0 0;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 16px;
+    line-height: 1.63;
+    text-align: left;
+    color: #7e7e7e;
+  }
+
+  .redirect {
+    margin-top: 33px;
+    font-size: 20px;
+    line-height: 1.3;
+    text-align: left;
+    color: #ff7b13;
+    text-decoration: underline;
+  }
+}

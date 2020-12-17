@@ -1,0 +1,9 @@
+<div class="ui-ddw-item" (click)="toggle()">{{ selectedItem?.value }}</div>
+<div class="expand" (click)="toggle()">
+  <i class="material-icons">expand_more</i>
+</div>
+<div class="items-container" *ngIf="expanded">
+  <div class="ui-ddw-item" (click)="select(item)" *ngFor="let item of items">
+    {{ item.value }}
+  </div>
+</div>

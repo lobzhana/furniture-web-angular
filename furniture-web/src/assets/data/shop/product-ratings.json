@@ -1,0 +1,42 @@
+[
+  {
+    "productId": "PRID-00001",
+    "stars": 4.8,
+    "hearted": false
+  },
+  {
+    "productId": "PRID-00003",
+    "stars": 4.5,
+    "hearted": false
+  },
+  {
+    "productId": "PRID-00006",
+    "stars": 4,
+    "hearted": true
+  },
+  {
+    "productId": "PRID-00007",
+    "stars": 4.2,
+    "hearted": false
+  },
+  {
+    "productId": "PRID-00009",
+    "stars": 4.1,
+    "hearted": false
+  },
+  {
+    "productId": "PRID-00010",
+    "stars": 3.9,
+    "hearted": true
+  },
+  {
+    "productId": "PRID-00013",
+    "stars": 3.5,
+    "hearted": false
+  },
+  {
+    "productId": "PRID-00015",
+    "stars": 4.5,
+    "hearted": false
+  }
+]

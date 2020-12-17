@@ -1,0 +1,15 @@
+:host {
+  display: flex;
+  max-width: 1200px;
+  min-height: 600px;
+  margin: 0 auto;
+  margin-top: 120px;
+
+  .sidebar-container {
+    width: 270px;
+  }
+
+  .products-container {
+    width: 870px;
+  }
+}
