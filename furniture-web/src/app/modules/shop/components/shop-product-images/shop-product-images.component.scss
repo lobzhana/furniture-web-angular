@@ -1,0 +1,23 @@
+:host {
+  display: flex;
+  width: 570px;
+  height: 545px;
+
+  .img-small {
+    display: block;
+    width: 70px;
+    height: 68px;
+    margin-bottom: 16px;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+
+  .img-big {
+    width: 470px;
+    height: 100%;
+    margin-left: 30px;
+  }
+}

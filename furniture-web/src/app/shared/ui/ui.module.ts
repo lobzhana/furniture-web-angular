@@ -5,6 +5,7 @@ import { DropDownComponent } from './drop-down/drop-down.component';
 import { PagingComponent } from './paging/paging.component';
 import { RatingStarComponent } from './rating-star/rating-star.component';
 import { HeartComponent } from './heart/heart.component';
+import { QuantityInputComponent } from './quantity-input/quantity-input.component';
 
 const exportable = [
   RangeSliderComponent,
@@ -12,6 +13,7 @@ const exportable = [
   PagingComponent,
   RatingStarComponent,
   HeartComponent,
+  QuantityInputComponent,
 ];
 
 @NgModule({

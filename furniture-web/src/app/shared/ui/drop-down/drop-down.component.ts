@@ -22,6 +22,7 @@ export interface DropDownItem {
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class DropDownComponent {
+  @Input() title: string;
   @Input() selectedItem: DropDownItem;
   @Input() items: DropDownItem[];
   @Output() changed = new EventEmitter<DropDownItem>();

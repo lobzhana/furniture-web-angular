@@ -7,8 +7,8 @@
 <ng-template #star>
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    width="14.848"
-    height="14.159"
+    [attr.width]="width"
+    [attr.height]="height"
     viewBox="0 0 14.848 14.159"
   >
     <g>
@@ -29,8 +29,8 @@
 <ng-template #emptyStar>
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    width="17.241"
-    height="16.441"
+    [attr.width]="width + 3"
+    [attr.height]="height + 2"
     viewBox="0 0 17.241 16.441"
   >
     <g>
@@ -46,8 +46,8 @@
 <ng-template #halfStar>
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    width="14.848"
-    height="14.159"
+    [attr.width]="width"
+    [attr.height]="height"
     viewBox="0 0 14.848 14.159"
   >
     <g>

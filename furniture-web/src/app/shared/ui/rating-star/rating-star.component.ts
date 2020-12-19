@@ -16,6 +16,8 @@ export class RatingStarComponent implements OnInit {
   constructor() {}
 
   @Input() stars: number;
+  @Input() width = 14.8;
+  @Input() height = 14.1;
 
   ngOnInit(): void {}
 }

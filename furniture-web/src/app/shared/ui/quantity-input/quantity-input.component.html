@@ -1,0 +1,12 @@
+<span class="title" *ngIf="title">{{ title }}</span>
+<i class="material-icons button" (click)="decrease()">remove</i>
+
+<input
+  class="input"
+  [value]="value"
+  type="number"
+  [min]="minValue"
+  [max]="maxValue"
+/>
+
+<i class="material-icons button" (click)="increase()">add</i>

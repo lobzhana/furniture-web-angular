@@ -1,0 +1,9 @@
+<div class="column-container">
+  <img
+    (click)="selectImg(img)"
+    *ngFor="let img of images"
+    class="img-small"
+    [src]="img"
+  />
+</div>
+<img #imgBig class="img-big" />

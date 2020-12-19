@@ -1,0 +1,48 @@
+<ng-container *ngIf="productInfo">
+  <app-shop-product-images
+    [images]="productInfo.images"
+  ></app-shop-product-images>
+  <div class="info column-container">
+    <h1 class="title">{{ productInfo.title }}</h1>
+    <div class="rating">
+      <ui-rating-star
+        [width]="23.5"
+        [height]="22.4"
+        [stars]="productInfo.rating"
+      ></ui-rating-star>
+      <span class="points" *ngIf="productInfo.rating"
+        >{{ productInfo.rating }} Ratings</span
+      >
+    </div>
+    <div class="price">
+      <span class="current">${{ productInfo.price }}</span>
+      <span class="old">${{ productInfo.oldPrice }}</span>
+    </div>
+    <span class="line-break"></span>
+    <h3 class="description">{{ productInfo.shortDescription }}</h3>
+    <div class="row-container actions">
+      <ui-quantity-input
+        [title]="'Quantity'"
+        [value]="1"
+        [maxValue]="99"
+        [minValue]="1"
+      ></ui-quantity-input>
+      <ui-drop-down
+        [title]="'Bed Size'"
+        [items]="[
+          { key: 'SZ-001', value: 'Twin: 38” x 75” | 96.5 X 190.5cm' },
+          { key: 'SZ-002', value: 'Twin XL: 38” x 80” | 96.5 X 203cm' },
+          { key: 'SZ-003', value: 'Full: 53” x 75” | 134.5 X 190.5cm' },
+          { key: 'SZ-004', value: 'Queen: 60” x 80” | 152.5 X 203cm' },
+          { key: 'SZ-005', value: 'King: 76” x 80” | 193 X 203cm' },
+          { key: 'SZ-006', value: 'California King: 72” x 84” | 183 X 213cm' }
+        ]"
+      ></ui-drop-down>
+      <ui-heart [hearted]="productInfo.hearted"></ui-heart>
+    </div>
+    <div class="row-container">
+      <button class="buy-now">Buy Now</button>
+      <button class="add-to-cart"></button>
+    </div>
+  </div>
+</ng-container>

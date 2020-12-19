@@ -13,6 +13,8 @@ import { ProductListItemComponent } from './components/product-list-item/product
 import { ProductStatusBadgeComponent } from './components/product-status-badge/product-status-badge.component';
 import { ShopProductDetailComponent } from './containers/shop-product-detail/shop-product-detail.component';
 import { RouterModule } from '@angular/router';
+import { ShopProductInfoComponent } from './components/shop-product-info/shop-product-info.component';
+import { ShopProductImagesComponent } from './components/shop-product-images/shop-product-images.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +28,8 @@ import { RouterModule } from '@angular/router';
     ProductListItemComponent,
     ProductStatusBadgeComponent,
     ShopProductDetailComponent,
+    ShopProductInfoComponent,
+    ShopProductImagesComponent,
   ],
   imports: [CommonModule, RouterModule, ShopRoutingModule, UiModule],
 })
