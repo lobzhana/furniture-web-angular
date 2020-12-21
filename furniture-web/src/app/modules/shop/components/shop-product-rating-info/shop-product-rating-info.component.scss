@@ -1,0 +1,92 @@
+:host {
+  display: block;
+  width: 370px;
+  min-height: 554px;
+  background-color: #f3f5fa;
+  padding: 35px 26px 39px;
+
+  * {
+    font-family: "Josefin Sans", sans-serif;
+    text-transform: capitalize;
+  }
+
+  .total {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 44px;
+    font-weight: 600;
+    color: #344863;
+  }
+
+  .rating-star {
+    display: block;
+    text-align: center;
+    width: 100%;
+    margin-top: 11px;
+  }
+
+  .overall {
+    display: block;
+    width: 100%;
+    text-align: center;
+    color: #7e7e7e;
+    font-size: 16px;
+    line-height: 1.19;
+    margin-top: 25px;
+  }
+
+  .stats {
+    width: 318px;
+    min-height: 228px;
+    padding: 17.4px 24px 16.8px 14px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    margin-top: 29px;
+
+    .stat {
+      margin-bottom: 24px;
+
+      &:first-child {
+        margin-top: 20px;
+      }
+
+      &:last-child {
+        margin-bottom: 16px;
+      }
+    }
+
+    .star-label {
+      font-size: 18px;
+      font-weight: 600;
+      color: #4e4d4d;
+      line-height: 1.22;
+      margin-right: 14px;
+    }
+
+    .overall-label {
+      margin-left: 14px;
+      font-size: 16px;
+      color: #b1b1b1;
+      line-height: 1.19;
+    }
+  }
+
+  .btn-container {
+    margin-top: 49px;
+
+    .button {
+      width: 307px;
+      height: 48px;
+      padding: 15px 100px 14px 101px;
+      border-radius: 4px;
+      background-color: #b1b1b1;
+      font-size: 18px;
+      color: #ffffff;
+      text-align: center;
+      line-height: 1.22;
+      border: none;
+      outline: none;
+    }
+  }
+}

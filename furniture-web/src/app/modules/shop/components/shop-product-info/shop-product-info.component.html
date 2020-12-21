@@ -11,15 +11,17 @@
         [stars]="productInfo.rating"
       ></ui-rating-star>
       <span class="points" *ngIf="productInfo.rating"
-        >{{ productInfo.rating }} Ratings</span
+        >{{ productInfo.rating }} Rating</span
       >
     </div>
     <div class="price">
-      <span class="current">${{ productInfo.price }}</span>
-      <span class="old">${{ productInfo.oldPrice }}</span>
+      <span class="current">${{ productInfo.price | number: ".2" }}</span>
+      <span class="old">${{ productInfo.oldPrice | number: ".2" }}</span>
     </div>
     <span class="line-break"></span>
-    <h3 class="description">{{ productInfo.shortDescription }}</h3>
+    <h3 class="description">
+      {{ productInfo.shortDescription?.substring(0, 200) }}...
+    </h3>
     <div class="row-container actions">
       <ui-quantity-input
         [title]="'Quantity'"
@@ -38,11 +40,12 @@
           { key: 'SZ-006', value: 'California King: 72” x 84” | 183 X 213cm' }
         ]"
       ></ui-drop-down>
-      <ui-heart [hearted]="productInfo.hearted"></ui-heart>
     </div>
-    <div class="row-container">
-      <button class="buy-now">Buy Now</button>
-      <button class="add-to-cart"></button>
+    <div class="row-container buttons">
+      <button class="add-to-cart">
+        Add To Cart
+        <i class="material-icons"> add_shopping_cart </i>
+      </button>
     </div>
   </div>
 </ng-container>

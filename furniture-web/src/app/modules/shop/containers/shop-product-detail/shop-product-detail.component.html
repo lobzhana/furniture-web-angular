@@ -1,22 +1,42 @@
-<app-shop-product-info
-  [productInfo]="{
-    id: 'PRID-00001',
-    title: 'Wooden Bed - Solimo Cleo Metal King Bed (Black)',
-    images: [
-      'https://via.placeholder.com/570x545',
-      'https://via.placeholder.com/570x545',
-      'https://via.placeholder.com/570x545',
-      'https://via.placeholder.com/570x545',
-      'https://via.placeholder.com/570x545'
-    ],
-    rating: 4.5,
-    hearted: true,
-    price: 115,
-    oldPrice: 65,
-    shortDescription:
-      'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia numquam eum inventore quam magni quidem minus tenetur illum hic, laboriosam nostrum ex cumque necessitatibus saepe quae id, iure blanditiis omnis eos aut aperiam.    Aperiam, harum quis. Mollitia animi ea aspernatur adipisci nemo doloremque cum, recusandae quo, necessitatibus ducimus aliquam ipsum.'
-  }"
-></app-shop-product-info>
-
-<!-- https://via.placeholder.com/570x545 -->
-<!-- https://picsum.photos/200/300?random=1 -->
+<div class="row-container">
+  <!-- https://via.placeholder.com/570x545 -->
+  <!-- https://picsum.photos/200/300?random=1 -->
+  <app-shop-product-info
+    [productInfo]="{
+      id: 'PRID-00001',
+      title: 'Wooden Bed - Solimo Cleo Metal King Bed (Black)',
+      images: [
+        'https://via.placeholder.com/570x545',
+        'https://via.placeholder.com/570x545',
+        'https://via.placeholder.com/570x545',
+        'https://via.placeholder.com/570x545',
+        'https://via.placeholder.com/570x545'
+      ],
+      rating: 4.5,
+      price: 115,
+      oldPrice: 65,
+      shortDescription:
+        'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia numquam eum inventore quam magni quidem minus tenetur illum hic, laboriosam nostrum ex cumque necessitatibus saepe quae id, iure blanditiis omnis eos aut aperiam.    Aperiam, harum quis. Mollitia animi ea aspernatur adipisci nemo doloremque cum, recusandae quo, necessitatibus ducimus aliquam ipsum.'
+    }"
+  ></app-shop-product-info>
+</div>
+<div class="row-container product-info">
+  <app-shop-product-rating-info
+    [ratingInfo]="{
+      total: 4.8,
+      overall: 510,
+      stats: [
+        { rating: 5, overall: 200 },
+        { rating: 4, overall: 121 },
+        { rating: 3, overall: 50 },
+        { rating: 2, overall: 20 },
+        { rating: 1, overall: 8 }
+      ]
+    }"
+  ></app-shop-product-rating-info>
+  <ui-tabs>
+    <ui-tab [title]="'Review'">
+      <app-shop-product-reviews [reviews]="[]"></app-shop-product-reviews>
+    </ui-tab>
+  </ui-tabs>
+</div>

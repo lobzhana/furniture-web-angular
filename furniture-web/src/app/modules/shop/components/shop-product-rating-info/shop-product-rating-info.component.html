@@ -1,0 +1,31 @@
+<span class="total">{{ ratingInfo.total }}</span>
+<div class="rating-star">
+  <ui-rating-star
+    [width]="30"
+    [height]="29"
+    [stars]="ratingInfo.total"
+  ></ui-rating-star>
+</div>
+<span class="overall">Overall {{ ratingInfo.overall }} review</span>
+<div class="stats">
+  <ng-container *ngFor="let stat of ratingInfo.stats">
+    <ng-container
+      *ngTemplateOutlet="statsTemplate; context: { $implicit: stat }"
+    >
+    </ng-container>
+  </ng-container>
+</div>
+<div class="btn-container">
+  <button class="button">Write review</button>
+</div>
+<ng-template #statsTemplate let-stat>
+  <div class="stat">
+    <span class="star-label">{{ stat.rating }} Star</span>
+    <ui-rating-star
+      [width]="22"
+      [height]="21"
+      [stars]="stat.rating"
+    ></ui-rating-star>
+    <span class="overall-label">({{ stat.overall }})</span>
+  </div>
+</ng-template>

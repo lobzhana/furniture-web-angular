@@ -15,6 +15,8 @@ import { ShopProductDetailComponent } from './containers/shop-product-detail/sho
 import { RouterModule } from '@angular/router';
 import { ShopProductInfoComponent } from './components/shop-product-info/shop-product-info.component';
 import { ShopProductImagesComponent } from './components/shop-product-images/shop-product-images.component';
+import { ShopProductRatingInfoComponent } from './components/shop-product-rating-info/shop-product-rating-info.component';
+import { ShopProductReviewsComponent } from './components/shop-product-reviews/shop-product-reviews.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +32,8 @@ import { ShopProductImagesComponent } from './components/shop-product-images/sho
     ShopProductDetailComponent,
     ShopProductInfoComponent,
     ShopProductImagesComponent,
+    ShopProductRatingInfoComponent,
+    ShopProductReviewsComponent,
   ],
   imports: [CommonModule, RouterModule, ShopRoutingModule, UiModule],
 })
