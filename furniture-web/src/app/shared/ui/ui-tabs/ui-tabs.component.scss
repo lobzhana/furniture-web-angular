@@ -1,0 +1,37 @@
+:host {
+  display: block;
+  width: 100%;
+
+  .header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+    .title {
+      display: block;
+      min-width: 200px;
+      padding: 20px;
+      margin: 0 99px 0 0;
+      text-align: center;
+      border-radius: 4px;
+      background-color: #f3f5fa;
+      font-size: 18px;
+      color: #7e7e7e;
+      line-height: 1.22;
+      font-family: "Josefin Sans", sans-serif;
+      cursor: pointer;
+
+      &:hover {
+        color: #ff7b13;
+      }
+
+      &.active {
+        background-color: #f6c44b;
+      }
+    }
+  }
+
+  .content {
+    display: block;
+  }
+}

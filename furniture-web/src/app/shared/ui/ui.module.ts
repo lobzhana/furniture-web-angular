@@ -7,7 +7,8 @@ import { RatingStarComponent } from './rating-star/rating-star.component';
 import { HeartComponent } from './heart/heart.component';
 import { QuantityInputComponent } from './quantity-input/quantity-input.component';
 import { UiTabsComponent } from './ui-tabs/ui-tabs.component';
-import { UiTabComponent } from './uiTabs/ui-tab/ui-tab.component';
+import { UiTabComponent } from './ui-tabs/ui-tab/ui-tab.component';
+import { UiTabComponentService } from './ui-tabs/tab-state.service';
 
 const exportable = [
   RangeSliderComponent,
@@ -24,5 +25,6 @@ const exportable = [
   declarations: [...exportable],
   imports: [CommonModule],
   exports: [...exportable],
+  providers: [UiTabComponentService],
 })
 export class UiModule {}

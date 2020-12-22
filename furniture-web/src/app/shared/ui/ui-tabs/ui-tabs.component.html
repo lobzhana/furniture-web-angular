@@ -1,1 +1,13 @@
-<p>ui-tabs works!</p>
+<div class="header">
+  <div
+    [class.active]="header.active"
+    class="title"
+    *ngFor="let header of headers"
+    (click)="selectTab(header)"
+  >
+    {{ header.title }}
+  </div>
+</div>
+<div class="content">
+  <ng-content></ng-content>
+</div>
