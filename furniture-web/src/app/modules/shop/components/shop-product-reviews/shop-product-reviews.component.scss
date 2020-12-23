@@ -1,0 +1,49 @@
+:host {
+  display: block;
+  width: 100%;
+  font-family: "Josefin Sans", sans-serif;
+
+  .review {
+    margin-bottom: 26.5px;
+    margin-top: 26.5px;
+
+    .avatar {
+      border-radius: 4px;
+      width: 65px;
+      height: 62px;
+    }
+
+    .name {
+      font-size: 18px;
+      line-height: 1.22;
+      color: #4e4d4d;
+      margin-left: 31px;
+    }
+
+    .rating {
+      color: #7e7e7e;
+      font-size: 16px;
+      line-height: 1.19;
+      margin-left: 31px;
+      margin-top: 12px;
+    }
+
+    .when {
+      margin-left: auto;
+      color: #6c7b97;
+      font-size: 14px;
+      line-height: 1.29;
+
+      i {
+        color: #e7af00;
+      }
+    }
+
+    .comment {
+      color: #b1b1b1;
+      line-height: 1.63;
+      font-size: 16px;
+      margin-top: 20px;
+    }
+  }
+}

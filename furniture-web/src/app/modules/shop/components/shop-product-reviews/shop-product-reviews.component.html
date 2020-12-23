@@ -1,1 +1,30 @@
-<p>shop-product-reviews works!</p>
+<ng-container *ngIf="reviews">
+  <ng-container *ngFor="let review of reviews">
+    <div class="review">
+      <div class="row-container">
+        <img [src]="review.avatar" class="avatar" />
+        <div class="column-container">
+          <span class="name">{{ review.name }}</span>
+          <div class="rating">
+            <ui-rating-star
+              [width]="17"
+              [height]="16"
+              [stars]="review.rating"
+            ></ui-rating-star>
+            <span>&nbsp;{{ review.rating }} Rating</span>
+          </div>
+        </div>
+        <div class="when">
+          <i class="material-icons">schedule</i>
+          <!-- {{ review.whenUtc }} -->
+          <!-- pipe to convert to how many times ago it was, minutes, hours, days, weeks, months or years -->
+          2 hour ago
+        </div>
+      </div>
+      <p class="comment">
+        {{ review.comment }}
+      </p>
+    </div>
+    <div class="line-break"></div>
+  </ng-container>
+</ng-container>

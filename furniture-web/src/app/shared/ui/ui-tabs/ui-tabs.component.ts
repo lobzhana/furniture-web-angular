@@ -31,6 +31,7 @@ export class UiTabsComponent implements AfterContentInit {
     this.children.forEach((tab) => {
       headers.push({ title: tab.title, active: false });
     });
+
     return headers;
   }
 
